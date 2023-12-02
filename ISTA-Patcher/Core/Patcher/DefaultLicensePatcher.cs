@@ -7,9 +7,6 @@ public class DefaultLicensePatcher : DefaultPatcher
 {
     public DefaultLicensePatcher(string modulus, string exponent, ProgramArgs.LicenseOptions opts)
         : base(opts)
-    {
-        this.Patches.Add(
-            PatchUtils.PatchGetRSAPKCS1SignatureDeformatter(modulus, exponent)
-        );
+    {        
     }
 }
